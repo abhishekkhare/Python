@@ -5,7 +5,7 @@ print(tm.time())
 
 dtNow = dt.datetime.fromtimestamp(tm.time())
 print(dtNow)
-dtCurrent = dt.datetime(2020,07,9,16,55,05,500572)
+dtCurrent = dt.datetime(2020, 7, 9, 16, 55, 5, 500572)
 print(dtCurrent)
 print(dtNow.year, dtNow.month, dtNow.day, dtNow.hour, dtNow.minute, dtNow.second)
 
