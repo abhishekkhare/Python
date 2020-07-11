@@ -1,4 +1,5 @@
 import numpy as np
+import sys
 
 print("*********** Joining Arrays **************")
 print("1 dimensional array")
@@ -25,7 +26,60 @@ print('2 -> ',arrC2)
 print("*********** Joining Arrays Using Stack Functions **************")
 arr1 = np.array([1, 2, 3])
 arr2 = np.array([4, 5, 6])
+
 arrR = np.row_stack((arr1, arr2))
 arrC = np.column_stack((arr1, arr2))
+
+arrV = np.vstack((arr1, arr2))
+arrH = np.hstack((arr1, arr2))
+arrD = np.dstack((arr1, arr2))
+
+arr1 = np.stack((arr1, arr2), axis=1)
+
+
 print("ROW --> ",arrR)
 print("COLUMN --> ",arrC)
+
+print("H --> ",arrH)
+print("V --> ",arrV)
+print("D --> ",arrD)
+
+print("1 --> ",arr1)
+
+print("*********** Splitting NumPy Arrays Functions **************")
+print("1 dimensional array")
+arr = np.array([1, 2, 3, 4, 5, 6])
+newarr = np.array_split(arr, 3)
+print(newarr)
+print(newarr[0])
+print(newarr[1])
+print(newarr[2])
+# If the array has less elements than required,
+# it will adjust from the end accordingly.
+newarr = np.array_split(arr, 4)
+print(newarr)
+print("2 dimensional array")
+arr = np.array([[1, 2], [3, 4], [5, 6], [7, 8], [9, 10], [11, 12]])
+newarr = np.array_split(arr, 3)
+print(newarr)
+arr = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12], [13, 14, 15], [16, 17, 18]])
+newarr = np.array_split(arr, 3)
+print(newarr)
+newarr = np.array_split(arr, 3, axis=1)
+print(newarr)
+
+arrH = np.hsplit(arr, 3)
+arrV = np.vsplit(arr, 3)
+print("H --> ",arrH)
+print("V --> ",arrV)
+print("3 dimensional array")
+arr = np.array([[[1, 2, 3], [4, 5, 6]], [[7, 8, 9], [10, 11, 12]] , [[13, 14, 15], [16, 17, 18]]])
+newarr = np.array_split(arr, 3)
+print(newarr)
+newarr = np.array_split(arr, 3, axis=1)
+print(newarr)
+# dsplit only works on arrays of 3 or more dimensions
+arrD = np.dsplit(arr, 3)
+print("D --> ",arrD)
+
+sys.exit()
