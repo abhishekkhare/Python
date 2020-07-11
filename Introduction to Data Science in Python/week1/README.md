@@ -43,6 +43,4 @@
 
 _**Probability Density Function:** A function that describes a continuous probability. i.e. probability of all values in an array._
 
-- Shuffle means changing arrangement of elements in-place. i.e. in the array itself. The NumPy Random module provides two methods for this: **shuffle()** and **permutation()**. The shuffle() method makes changes to the original array. arr = np.array([1, 2, 3, 4, 5])
-                                                                                                                                                                                                                                           
-                                                                                                                                                                                                                                           print(random.permutation(arr))
+- Shuffle means changing arrangement of elements in-place. i.e. in the array itself. The NumPy Random module provides two methods for this: **shuffle()** and **permutation()**. The shuffle() method makes changes to the original array.
