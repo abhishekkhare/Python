@@ -1,5 +1,5 @@
 import numpy as np
-
+import sys
 print("*********** Type **************")
 arr = np.array([1, 2, 3, 4])
 print(arr.dtype)
@@ -75,3 +75,59 @@ print(newarr)
 arr = np.array([[1, 2, 3], [4, 5, 6]])
 newarr = arr.reshape(-1)
 print(newarr)
+
+print("*********** Arrange **************")
+print(np.arange(0,30,2))
+print("*********** LinSpace **************")
+print(np.linspace(0,30,5))
+print(np.linspace(0,30,6))
+print(np.linspace(0,30,7))
+print(np.linspace(0,30,100))
+
+print("*********** resize **************")
+arr = np.arange(0,30,2)
+arr.resize(3,3)
+print(arr)
+print("*********** reshape **************")
+arr = np.arange(0,30,2)
+print(arr.reshape(3,5)) # reshape has to be exact number of items
+
+print("*********** Others **************")
+print("ones --> ",np.ones((3,2)))
+print("zeros --> ",np.zeros((2,3)))
+print("eye --> ", np.eye(3))
+print("diag --> ", np.diag(y))
+print("array multiply --> " ,np.array([1,2,3]*3))
+print("array repeat --> " ,np.array([1,2,3]*3))
+
+print("*********** Operations **************")
+x = np.array([1,2,3,4])
+y = np.array([9,8,7,6])
+print("add --> ",x+y)
+print("sub --> ",y-x)
+print("mul --> ",x*y)
+print("div --> ",y/x)
+print("pow --> ",x**2)
+print("dot --> ",x.dot(y))
+print("1D-->2D --> ",np.array([x,x**2]))
+print("1D-->2D Transpose --> ",np.array([x,x**2]).T)
+print("*********** Math **************")
+arr = np.arange(-5,10,2)
+print(arr)
+print("sum --> ", arr.sum())
+print("max --> ", arr.max())
+print("min --> ", arr.min())
+print("mean --> ", arr.mean())
+print("std --> ", arr.std())
+print("argmax --> ", arr.argmax())
+print("argmin --> ", arr.argmin())
+
+old = np.array([[1, 1, 1],
+                [1, 1, 1]])
+
+new = old.copy()
+new[:, 0] = 0
+
+print(old)
+
+sys.exit()

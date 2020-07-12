@@ -1,0 +1,17 @@
+import numpy as np
+import sys
+arr = np.arange(0,36,1)
+r = arr.reshape(6,6)
+print(r)
+print("1",r[0:6,::-7])
+print("2",r.reshape(36)[::7])
+print("3",r[:,::7])
+print("4",r[::7])
+print("*****************************")
+print(r)
+print("1",r[[2,3],[2,3]])
+print("2",r[::2,::2])
+print("3",r[2::2,2::2])
+print("4",r[2:4,2:4])
+print(['a', 'b', 'c'] + [1, 2, 3])
+sys.exit()

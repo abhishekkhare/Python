@@ -1,5 +1,6 @@
 print("Basic Lambda")
 x = lambda a : a + 10
+print(type(x))
 print(x(5))
 x = lambda a, b : a * b
 print(x(5, 6))
