@@ -1,5 +1,5 @@
 .idea/
 *.iml
 /venv
-*Assignments.py
-Folder/.ipynb_checkpoints/*.ipynb
+*Assignments*
+Folder/.ipynb_checkpoints/*.*
