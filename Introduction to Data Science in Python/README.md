@@ -1,0 +1,1 @@
+- [Recommended Reading](https://greenteapress.com/thinkstats/thinkstats.pdf)

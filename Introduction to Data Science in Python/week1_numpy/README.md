@@ -2,12 +2,14 @@
 
 - NumPy is a python library used for working with arrays.
 - NumPy aims to provide an array object that is up to 50x faster that traditional Python lists.
+- Lists are very slow, while Numpy is very fast, this is because: 
+    - Numpy uses Fixed Types. 
+    - No Type checking.
+    - Uses Contiguous memory. 
 - The array object in NumPy is called ndarray, it provides a lot of supporting functions that make working with ndarray very easy.
 - NumPy arrays are stored at one continuous place in memory unlike lists, so processes can access and manipulate them very efficiently.This behavior is called locality of reference in computer science. This is the main reason why NumPy is faster than lists. 
 - To create an ndarray, we can pass a list, tuple or any array-like object into the array() method, and it will be converted into an ndarray
 - Slicing in python means taking elements from one given index to another given index.
-
-
 - below is a list of all data types in NumPy and the characters used to represent them.
     - i - integer
     - b - boolean
